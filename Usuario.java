@@ -7,6 +7,7 @@ public class Usuario implements Serializable {
 	//atributos
 	private String nome;
 	private ComClient callback;
+        private String msg;
 
 	public String getNome() {
 		return nome;
@@ -22,6 +23,14 @@ public class Usuario implements Serializable {
 
 	public void setCallback(ComClient callback) {
 		this.callback = callback;
+	}
+	
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 
 }
