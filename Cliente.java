@@ -22,8 +22,8 @@ public class Cliente extends UnicastRemoteObject implements ComClient {
 				String msg;
 				Naming.rebind(nome, new Cliente());
 				System.out.println("----------------------------------------");
-				System.out.println("Seja Bem vindo");
-				System.out.println("----------------------------------------");
+				System.out.println("-------------Seja Bem vindo"------------);
+				System.out.println("-------------------------------=--------");
 				System.out.println("Nickname:");
 				Usuario usuario = new Usuario();
 			} catch (Exception e) {
