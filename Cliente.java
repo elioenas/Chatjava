@@ -29,9 +29,11 @@ public class Cliente extends UnicastRemoteObject implements ClienteIF {
 		// lendo os dados
 		Scanner input = new Scanner(System.in);
 		String msg;
+		System.out.println("Nickname:");
 
 		while (true) {
 			msg = input.nextLine();
+			mome = input.nextLine();
 			try {
 				servidor.BroadcastMessage("nickname" + ":" + msg);
 			} catch (Exception e) {
